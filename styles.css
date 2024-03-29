@@ -1,0 +1,307 @@
+header{
+    background-image: url('vintage_bulbs.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*Logo*/
+#logo{
+    font-family: poppins;
+    font-size: 30px;
+}
+
+/*links*/
+.home{
+    color: white;
+    font-family: poppins;
+}
+
+.home:hover{
+    color: #C5AD4B;
+    transition: .5s;
+}
+
+.blog {
+    color: white;
+    font-family: poppins;
+}
+
+.blog:hover {
+    color: #C5AD4B;
+    transition: .5s;
+}
+
+.about {
+    color: white;
+    font-family: poppins;
+}
+
+.about:hover {
+    color: #C5AD4B;
+    transition: .5s;
+}
+
+.contact {
+    color: white;
+    font-family: poppins;
+}
+
+.contact:hover {
+    color: #C5AD4B;
+    transition: .5s;
+}
+
+/*Offcanvas*/
+.off{
+    background-image: linear-gradient(#C5AD4B,white);
+}
+
+.home_off{
+    font-family: poppins;    
+}
+
+.blog_off {
+    font-family: poppins;
+}
+
+.about_off {
+    font-family: poppins;
+}
+
+.contact_off {
+    font-family: poppins;
+}
+
+/*Scroll Reveal*/
+.section {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section .reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*second section*/
+
+.products{
+    background-color: #C5AD4B;
+    border-radius: 50%;
+    width: 40%;
+    }
+
+@media only screen and (max-width: 768px) {
+    .products {
+        max-width: 20vw;
+    }
+}
+
+/*No Gap modifications*/
+.no-gap {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gap [class^="col-"],
+.no-gap [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .fashion, .cars, .ads{
+        margin-top: -20%;
+    }
+}
+/*Albums Section*/
+
+.image{
+    width: 100%;
+    height: 90%;
+}
+
+/*Nature*/
+.nature {
+    position: relative;
+    display: inline-block;
+}
+
+.nature img{
+    filter: grayscale(1);
+}
+
+.nature:hover img {
+    filter: grayscale(0);
+    /* Remove grayscale filter on hover */
+}
+
+.nature_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+
+    /* Initially hide the overlay */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nature:hover .nature_overlay {
+    opacity: 1;
+    /* Show the overlay on hover */
+}
+
+.nature_overlay h3 {
+    text-align: center;
+}
+
+/*Fashion*/
+.fashion {
+    position: relative;
+    display: inline-block;
+}
+
+.fashion img {
+    filter: grayscale(1);
+}
+
+.fashion:hover img {
+    filter: grayscale(0);
+    /* Remove grayscale filter on hover */
+}
+
+.fashion_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+
+    /* Initially hide the overlay */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fashion:hover .fashion_overlay {
+    opacity: 1;
+    /* Show the overlay on hover */
+}
+
+.fashion_overlay h3 {
+    text-align: center;
+}
+
+/*Cars*/
+.cars {
+    position: relative;
+    display: inline-block;
+}
+
+.cars img {
+    filter: grayscale(1);
+}
+
+.cars:hover img {
+    filter: grayscale(0);
+    /* Remove grayscale filter on hover */
+}
+
+.cars_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+
+    /* Initially hide the overlay */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cars:hover .cars_overlay {
+    opacity: 1;
+    /* Show the overlay on hover */
+}
+
+.cars_overlay h3 {
+    text-align: center;
+}
+
+/*Vintage Advertisements*/
+.ads {
+    position: relative;
+    display: inline-block;
+}
+
+.ads img {
+    filter: grayscale(1);
+}
+
+.ads:hover img {
+    filter: grayscale(.25);
+    /* Remove grayscale filter on hover */
+}
+
+.ads_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+
+    /* Initially hide the overlay */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads:hover .ads_overlay {
+    opacity: 1;
+    /* Show the overlay on hover */
+}
+
+.ads_overlay h3 {
+    text-align: center;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(23, 23, 23);
+    height: 30vh;
+    color: white;
+}
+
+.social_links a{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.social_links a:hover{
+    color: skyblue;
+}
+
+.copyright{
+    height: 7vh;
+    background-color: black;
+}
